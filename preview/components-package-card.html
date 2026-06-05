@@ -1,0 +1,28 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;background:#FBFAF7;padding:24px 30px}
+  .wrap{display:flex;gap:18px}
+  .card{width:300px;border-radius:18px;overflow:hidden;border:1px solid rgba(20,17,11,.10);background:#FFFFFF;box-shadow:0 4px 16px rgba(20,17,11,.05)}
+  .card.hot{border-color:rgba(201,168,76,.45);box-shadow:0 22px 50px rgba(20,17,11,.13);transform:translateY(-4px)}
+  .imgwrap{height:170px;position:relative;overflow:hidden}
+  .img{position:absolute;inset:0;background-size:cover;background-position:center}
+  .badge{position:absolute;top:14px;left:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8B6914;background:rgba(251,250,247,.92);border:1px solid rgba(201,168,76,.45);padding:5px 11px;border-radius:999px}
+  .body{padding:16px 18px 18px}
+  .ttl{font-family:var(--font-display);font-weight:600;font-size:23px;color:#14110B;margin:0 0 5px}
+  .desc{font-family:var(--font-body);font-size:13px;color:#6B665C;margin:0 0 12px}
+  .cta{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;color:#9A7212;font-weight:700}
+  .lbl{font-family:var(--font-mono);font-size:10px;color:#8A857B;letter-spacing:.06em;margin-top:10px;text-align:center}
+</style></head>
+<body>
+  <div class="wrap">
+    <div>
+      <div class="card"><div class="imgwrap"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600')"></div><span class="badge">Wedding</span></div><div class="body"><h3 class="ttl">Wedding</h3><p class="desc">Cinematic coverage of your big day.</p><span class="cta">Book Now →</span></div></div>
+      <div class="lbl">rest</div>
+    </div>
+    <div>
+      <div class="card hot"><div class="imgwrap"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600');transform:scale(1.07)"></div><span class="badge">Birthday</span></div><div class="body"><h3 class="ttl">Birthday</h3><p class="desc">Candid joy, every candle.</p><span class="cta">Book Now →</span></div></div>
+      <div class="lbl">hover · zoom + gold border + lift</div>
+    </div>
+  </div>
+</body></html>

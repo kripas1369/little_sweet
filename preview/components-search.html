@@ -1,0 +1,25 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;background:#FBFAF7;padding:26px 30px;color:#14110B}
+  .card{background:#FFFFFF;border:1px solid rgba(20,17,11,.10);border-radius:16px;padding:22px 24px;max-width:600px;box-shadow:0 4px 16px rgba(20,17,11,.05)}
+  .h{font-family:var(--font-display);font-weight:600;font-size:22px;margin:0 0 16px;color:#14110B}
+  .row{display:flex;gap:10px;align-items:stretch}
+  .field{flex:1;display:flex;align-items:center;gap:8px;background:#F3EFE6;border:1px solid rgba(20,17,11,.10);border-radius:10px;padding:0 14px;height:46px;font-family:var(--font-body);font-size:13px;color:#6B665C}
+  .field .chev{margin-left:auto;color:#9A7212;font-size:10px}
+  .search{background:var(--gold-gradient);color:#1C1606;border:none;border-radius:10px;padding:0 22px;font-family:var(--font-body);font-weight:600;font-size:14px;cursor:pointer}
+  .pop{font-family:var(--font-body);font-size:12px;color:#8A857B;margin-top:14px}
+  .pop a{color:#9A7212;text-decoration:none;font-weight:500}
+</style></head>
+<body>
+  <div class="card">
+    <h3 class="h">Find Your Perfect Package</h3>
+    <div class="row">
+      <div class="field"><span>Event Type</span><span class="chev">▾</span></div>
+      <div class="field"><span>Pick a date</span><span class="chev">▾</span></div>
+      <div class="field"><span>Budget Range</span><span class="chev">▾</span></div>
+      <button class="search">🔍 Search</button>
+    </div>
+    <p class="pop">Popular: <a>Wedding</a> · <a>Baby Shower</a> · <a>Birthday</a> · <a>Corporate</a></p>
+  </div>
+</body></html>
