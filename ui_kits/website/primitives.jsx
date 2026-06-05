@@ -20,33 +20,10 @@ function Icon({ name, size = 18, color = 'currentColor', strokeWidth = 1.8, styl
   return <span ref={ref} style={{ display: 'inline-flex', lineHeight: 0, ...style }} />;
 }
 
-// ---- Logo (aperture monogram) ----------------------------------------------
+// ---- Logo ----------------------------------------------
 function Logo({ width = 132 }) {
   return (
-    <svg width={width} height={width * (100 / 240)} viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Little Sweet Photography">
-      <defs>
-        <linearGradient id="lspG" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#E8C96A" /><stop offset="50%" stopColor="#C9A84C" /><stop offset="100%" stopColor="#8B6914" />
-        </linearGradient>
-        <linearGradient id="lspGV" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#E8C96A" /><stop offset="100%" stopColor="#A9852E" />
-        </linearGradient>
-      </defs>
-      <rect x="14" y="16" width="120" height="68" rx="6" fill="none" stroke="url(#lspG)" strokeWidth="2.5" opacity="0.55" />
-      <rect x="106" y="16" width="120" height="68" rx="6" fill="none" stroke="url(#lspG)" strokeWidth="2.5" opacity="0.9" />
-      <text x="40" y="68" fontFamily="'Playfair Display', serif" fontSize="54" fontWeight="700" fill="url(#lspGV)">L</text>
-      <g>
-        <circle cx="110" cy="50" r="29" fill="none" stroke="url(#lspG)" strokeWidth="1.5" opacity="0.5" />
-        <path d="M118.79,50.92 L136.00,50.00 Q132.52,63.00 123.00,72.52 Z" fill="url(#lspG)" opacity="0.95" />
-        <path d="M113.60,58.08 L123.00,72.52 Q110.00,76.00 97.00,72.52 Z" fill="url(#lspG)" opacity="0.78" />
-        <path d="M104.80,57.15 L97.00,72.52 Q87.48,63.00 84.00,50.00 Z" fill="url(#lspG)" opacity="0.62" />
-        <path d="M101.21,49.08 L84.00,50.00 Q87.48,37.00 97.00,27.48 Z" fill="url(#lspG)" opacity="0.95" />
-        <path d="M106.40,41.92 L97.00,27.48 Q110.00,24.00 123.00,27.48 Z" fill="url(#lspG)" opacity="0.78" />
-        <path d="M115.20,42.85 L123.00,27.48 Q132.52,37.00 136.00,50.00 Z" fill="url(#lspG)" opacity="0.62" />
-        <circle cx="110" cy="50" r="7" fill="#080808" />
-      </g>
-      <text x="178" y="68" fontFamily="'Playfair Display', serif" fontSize="54" fontWeight="700" fill="url(#lspGV)">P</text>
-    </svg>
+    <img src="../../assets/logo.png" width={width} alt="Little Sweet Photography" style={{ display: 'block' }} />
   );
 }
 
