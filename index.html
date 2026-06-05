@@ -1132,9 +1132,6 @@ function Navbar({ onBook, onNav, route, onPick }) {
 
   const navContent = (
     <React.Fragment>
-      <div style={{ cursor:'pointer', flexShrink:0 }} onClick={() => onNav('home')}>
-        <Logo width={108} variant="nav" />
-      </div>
       <div className="nav-links" style={{ display:'flex', alignItems:'center', gap:28 }}>
         <NavLink active={route==='home'}    onClick={() => onNav('home')}>Home</NavLink>
         <NavLink active={route==='about'}   onClick={() => onNav('about')}>About</NavLink>
@@ -1161,9 +1158,7 @@ function Navbar({ onBook, onNav, route, onPick }) {
         <div style={{ position:'fixed', inset:0, zIndex:200,
           background:'rgba(255,255,255,0.98)', backdropFilter:'blur(20px)',
           padding:32, display:'flex', flexDirection:'column', gap:8 }}>
-          <div style={{ display:'flex', justifyContent:'space-between',
-            alignItems:'center', marginBottom:24 }}>
-            <Logo width={110} variant="nav" />
+          <div style={{ display:'flex', justifyContent:'flex-end', marginBottom:24 }}>
             <button onClick={() => setDrawer(false)}
               style={{ background:'none', border:'none',
                 color:'var(--gold-ink)', cursor:'pointer' }}>
